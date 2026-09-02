@@ -132,19 +132,25 @@ class PromptGenerator(
             []
         )
 
-        # Build character descriptions
+        # Build character descriptions with full outfit options
         character_lines = []
         if characters:
             boy = characters.get("boy", {})
             girl = characters.get("girl", {})
             if boy:
                 boy_desc = boy.get("default_outfit", boy.get("description", ""))
+                boy_options = boy.get("clothing_options", [])
                 if boy_desc:
-                    character_lines.append(f"- Boy: {boy_desc}")
+                    character_lines.append(f"- Boy default outfit: {boy_desc}")
+                if boy_options:
+                    character_lines.append(f"  Boy outfit options: {'; '.join(boy_options)}")
             if girl:
                 girl_desc = girl.get("default_outfit", girl.get("description", ""))
+                girl_options = girl.get("clothing_options", [])
                 if girl_desc:
-                    character_lines.append(f"- Girl: {girl_desc}")
+                    character_lines.append(f"- Girl default outfit: {girl_desc}")
+                if girl_options:
+                    character_lines.append(f"  Girl outfit options: {'; '.join(girl_options)}")
         characters_text = "\n".join(character_lines) if character_lines else self.format_bullets(protagonists)
 
         # Build sections conditionally
@@ -164,7 +170,10 @@ ACTIVITY POOL (choose ONE from this list - every entry is equally valid, spread 
 {self.format_bullets(activities)}
 
 SELECTION RULE
-Pick exactly one environment and one activity from the pools above. Treat the pools as a full menu: do not gravitate to the first entries or the most obvious options. A fresh, less common pairing makes a better concept than a familiar one."""]
+Pick exactly one environment and one activity from the pools above. Treat the pools as a full menu: do not gravitate to the first entries or the most obvious options. A fresh, less common pairing makes a better concept than a familiar one.
+
+OUTFIT RULE
+Use the default outfits only when they suit the season, weather, and setting of the chosen scene. If the scene is cold, hot, rainy, snowy, or otherwise demands different clothing, pick an outfit from that character's outfit options instead. Never mix one character's clothing onto the other. The boy always wears pants or shorts as bottom wear. The girl always wears a short miniskirt or short dress as bottom wear, and her outfit must suit the weather (e.g., a sweater with a miniskirt in winter, a sundress in summer)."""]
 
         if creative_engines:
             sections.append(f"""CREATIVE ENGINES

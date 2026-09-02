@@ -47,7 +47,7 @@
         "bakeries with glass display cases, fresh bread, and morning light"
     ],
     "protagonists": [
-        "a handsome Asian boy and a cute Asian girl who are a couple, always together, interacting with each other or sharing an activity"
+        "a handsome Asian young man and a cute Asian young woman who are a couple, always together, interacting with each other or sharing an activity"
     ],
     "video": {
         "duration_seconds": 8,
@@ -72,8 +72,8 @@
             "The summary field CAN use character names Aden and Anna for readability.",
             "The prompt field MUST NEVER use character names - describe each character visual appearance instead.",
             "IMPORTANT: Each character has their OWN outfit. NEVER apply one character clothing to the other.",
-            "The boy always wears pants or shorts as bottom wear - NEVER a miniskirt.",
-            "The girl always wears a short miniskirt or short dress as bottom wear - vary the color and style.",
+            "The handsome Asian young man always wears pants or shorts as bottom wear - vary the color and style.",
+            "The cute Asian young woman always wears a short miniskirt or short dress as bottom wear - vary the color and style.",
             "Always describe hair, top wear, and bottom wear for BOTH characters.",
             "Keep the prompt concise and visual - describe what the camera sees.",
             "Do NOT include music or audio instructions in the prompt field - visuals only."
@@ -104,7 +104,7 @@
     "creative_engines": [],
     "characters": {
         "boy": {
-            "description": "A handsome Asian boy. Always describe his hair, top wear, and bottom wear. Never use his name in generation prompts.",
+            "description": "A handsome Asian young man. Always describe his hair, top wear, and bottom wear. Never use his name in generation prompts.",
             "default_outfit": "handsome Asian boy, short black hair, dark blue sweater, black pants",
             "clothing_options": [
                 "casual hoodie and jeans",
@@ -120,7 +120,7 @@
             ]
         },
         "girl": {
-            "description": "A cute Asian girl. Always describe her hair, top wear, and bottom wear (short miniskirt or short dress). Never use her name in generation prompts.",
+            "description": "A cute Asian young woman. Always describe her hair, top wear, and bottom wear (short miniskirt or short dress). Never use her name in generation prompts.",
             "default_outfit": "cute Asian girl, long wavy dark-brown hair, light pink tank top, white miniskirt",
             "clothing_options": [
                 "short miniskirt with a cute top",
