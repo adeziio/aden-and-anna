@@ -141,16 +141,16 @@ class PromptGenerator(
                 boy_desc = boy.get("default_outfit", boy.get("description", ""))
                 boy_options = boy.get("clothing_options", [])
                 if boy_desc:
-                    character_lines.append(f"- Boy default outfit: {boy_desc}")
+                    character_lines.append(f"- Handsome Asian young man default outfit: {boy_desc}")
                 if boy_options:
-                    character_lines.append(f"  Boy outfit options: {'; '.join(boy_options)}")
+                    character_lines.append(f"  Handsome Asian young man outfit options: {'; '.join(boy_options)}")
             if girl:
                 girl_desc = girl.get("default_outfit", girl.get("description", ""))
                 girl_options = girl.get("clothing_options", [])
                 if girl_desc:
-                    character_lines.append(f"- Girl default outfit: {girl_desc}")
+                    character_lines.append(f"- Cute Asian young woman default outfit: {girl_desc}")
                 if girl_options:
-                    character_lines.append(f"  Girl outfit options: {'; '.join(girl_options)}")
+                    character_lines.append(f"  Cute Asian young woman outfit options: {'; '.join(girl_options)}")
         characters_text = "\n".join(character_lines) if character_lines else self.format_bullets(protagonists)
 
         # Build sections conditionally
