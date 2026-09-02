@@ -1,0 +1,144 @@
+{
+    "genre": "cute anime couple short-form videos",
+    "tone": [
+        "romantic",
+        "wholesome",
+        "cozy",
+        "playful",
+        "sweet",
+        "relaxing",
+        "heartwarming",
+        "gentle",
+        "fun",
+        "chill"
+    ],
+    "world": [
+        "cozy modern apartments with warm lighting and comfortable furniture",
+        "sunny parks with cherry blossoms, green trees, and walking paths",
+        "bright cafes with large windows, wooden tables, and warm atmosphere",
+        "colorful shopping streets with interesting shops and cozy storefronts",
+        "beautiful beaches with gentle waves, soft sand, and golden sunlight",
+        "train stations and travel scenes with a sense of adventure",
+        "home kitchens with warm lighting, countertops, and cooking activities",
+        "bedrooms with soft bedding, warm blankets, and intimate atmosphere",
+        "restaurants with cozy seating, warm lighting, and delicious food",
+        "rooftops and scenic overlooks with city views and sunset skies",
+        "libraries and study spaces with bookshelves and quiet atmosphere",
+        "arcades and game centers with colorful lights and fun activities",
+        "festivals and outdoor events with lanterns, crowds, and excitement",
+        "nature trails with trees, flowers, and peaceful walking paths",
+        "cozy living rooms with sofas, blankets, and warm atmosphere"
+    ],
+    "protagonists": [
+        "a handsome young man and a cute young woman who are a couple, always together, interacting with each other or sharing an activity"
+    ],
+    "video": {
+        "duration_seconds": 8,
+        "aspect_ratio": "9:16",
+        "fps": 25,
+        "format": "mp4",
+        "resolution": {
+            "width": 1080,
+            "height": 1920
+        }
+    },
+    "audio": {
+        "enabled": true
+    },
+    "generation": {
+        "clip_count": 1
+    },
+    "prompt_generation": {
+        "instructions": [
+            "Generate one original concept for a cute anime couple video.",
+            "Focus on ONE clear physical action or interaction between the couple.",
+            "The summary field CAN use character names Aden and Anna for readability.",
+            "The prompt field MUST NEVER use character names - describe each character visual appearance instead.",
+            "IMPORTANT: Each character has their OWN outfit. NEVER apply one character clothing to the other.",
+            "The boy always wears pants or shorts as bottom wear - NEVER a miniskirt.",
+            "The girl always wears a short miniskirt or short dress as bottom wear - vary the color and style.",
+            "Always describe hair, top wear, and bottom wear for BOTH characters.",
+            "Keep the prompt concise and visual - describe what the camera sees.",
+            "Do NOT include music or audio instructions in the prompt field - visuals only."
+        ],
+        "creative_directions": [],
+        "creative_priorities": [],
+        "diversity_guidance": [],
+        "wow_factor_guidance": [
+            "Open with a visible image that holds the eye within the first second - through light, shape, atmosphere, color, or a striking subject.",
+            "Make the final image distinctly more striking than the setup - a satisfying landing, never a louder or busier one.",
+            "Let the environment and its look carry the weight; an atmospherically rich or unusual setting with a strong subject already commands attention.",
+            "Beauty, scale, light, and satisfying motion count every bit as much as surprise - aim for an arresting, coherent image rather than a gimmick."
+        ],
+        "living_subject_rules": [],
+        "style_rotation": [
+            "storybook anime"
+        ],
+        "ltx2_prompt_rules": [],
+        "audio_guidance": [],
+        "prompt_format": {
+            "minimum_words_per_second": 12,
+            "maximum_words_per_second": 20,
+            "minimum_words_floor": 90,
+            "maximum_words_cap": 170
+        },
+        "wow_factor": []
+    },
+    "creative_engines": [],
+    "characters": {
+        "boy": {
+            "description": "A handsome Asian boy. Always describe his hair, top wear, and bottom wear. Never use his name in generation prompts.",
+            "default_outfit": "handsome Asian boy, short black hair, dark blue sweater, black pants",
+            "clothing_options": [
+                "casual hoodie and jeans",
+                "stylish sweater and dark pants",
+                "t-shirt and shorts",
+                "button-up shirt and chinos",
+                "jacket and casual pants",
+                "trendy streetwear",
+                "smart casual outfit",
+                "cozy loungewear",
+                "light jacket and jeans",
+                "polo shirt and trousers"
+            ]
+        },
+        "girl": {
+            "description": "A cute Asian girl. Always describe her hair, top wear, and bottom wear (short miniskirt or short dress). Never use her name in generation prompts.",
+            "default_outfit": "cute Asian girl, long wavy dark-brown hair, light pink tank top, white miniskirt",
+            "clothing_options": [
+                "short miniskirt with a cute top",
+                "short dress with casual style",
+                "flowing mini dress",
+                "pleated miniskirt and blouse",
+                "short sundress",
+                "cute miniskirt and sweater",
+                "short skirt and tank top",
+                "mini dress with cardigan",
+                "short skirt and casual top",
+                "short light summer dress"
+            ]
+        }
+    },
+    "activities": [
+        "walking together through scenic locations",
+        "eating meals together at cafes or restaurants",
+        "cooking together in a kitchen",
+        "shopping at stores or markets",
+        "studying or reading together",
+        "playing games or arcade activities",
+        "traveling on trains or exploring new places",
+        "sightseeing at beautiful locations",
+        "relaxing at home on a couch or bed",
+        "watching movies together",
+        "going on dates to romantic locations",
+        "exploring interesting places together",
+        "doing household activities together",
+        "sharing food or drinks",
+        "having casual conversations",
+        "cute everyday interactions and gestures",
+        "enjoying sunset or sunrise together",
+        "visiting parks or gardens",
+        "enjoying seasonal activities",
+        "celebrating small moments together"
+    ]
+}
