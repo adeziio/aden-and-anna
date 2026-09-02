@@ -105,7 +105,7 @@
     "characters": {
         "boy": {
             "description": "A handsome Asian young man. Always describe his hair, top wear, and bottom wear. Never use his name in generation prompts.",
-            "default_outfit": "handsome Asian boy, short black hair, dark blue sweater, black pants",
+            "default_outfit": "handsome Asian young man, short black hair, dark blue sweater, black pants",
             "clothing_options": [
                 "casual hoodie and jeans",
                 "stylish sweater and dark pants",
@@ -121,7 +121,7 @@
         },
         "girl": {
             "description": "A cute Asian young woman. Always describe her hair, top wear, and bottom wear (short miniskirt or short dress). Never use her name in generation prompts.",
-            "default_outfit": "cute Asian girl, long wavy dark-brown hair, light pink tank top, white miniskirt",
+            "default_outfit": "cute Asian young woman, long wavy dark-brown hair, light pink tank top, white miniskirt",
             "clothing_options": [
                 "short miniskirt with a cute top",
                 "short dress with casual style",

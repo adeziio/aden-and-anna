@@ -173,7 +173,7 @@ SELECTION RULE
 Pick exactly one environment and one activity from the pools above. Treat the pools as a full menu: do not gravitate to the first entries or the most obvious options. A fresh, less common pairing makes a better concept than a familiar one.
 
 OUTFIT RULE
-Use the default outfits only when they suit the season, weather, and setting of the chosen scene. If the scene is cold, hot, rainy, snowy, or otherwise demands different clothing, pick an outfit from that character's outfit options instead. Never mix one character's clothing onto the other. The boy always wears pants or shorts as bottom wear. The girl always wears a short miniskirt or short dress as bottom wear, and her outfit must suit the weather (e.g., a sweater with a miniskirt in winter, a sundress in summer)."""]
+Use the default outfits only when they suit the season, weather, and setting of the chosen scene. If the scene is cold, hot, rainy, snowy, or otherwise demands different clothing, pick an outfit from that character's outfit options instead. Never mix one character's clothing onto the other. The handsome Asian young man always wears pants or shorts as bottom wear. The cute Asian young woman always wears a short miniskirt or short dress as bottom wear, and her outfit must suit the weather (e.g., a sweater with a miniskirt in winter, a sundress in summer)."""]
 
         if creative_engines:
             sections.append(f"""CREATIVE ENGINES
