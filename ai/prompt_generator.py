@@ -151,17 +151,20 @@ class PromptGenerator(
         sections = [f"""GENRE
 {genre}
 
-MOOD AND TONE (rotate between concepts - never force comedy)
+MOOD AND TONE
 {self.format_bullets(tone)}
 
-ENVIRONMENTS (the setting should add visual appeal)
+ENVIRONMENT POOL (choose ONE from this list - every entry is equally valid, spread your choices across the whole list)
 {self.format_bullets(world)}
 
 THE COUPLE
 {characters_text}
 
-TYPICAL ACTIVITIES
-{self.format_bullets(activities)}"""]
+ACTIVITY POOL (choose ONE from this list - every entry is equally valid, spread your choices across the whole list)
+{self.format_bullets(activities)}
+
+SELECTION RULE
+Pick exactly one environment and one activity from the pools above. Treat the pools as a full menu: do not gravitate to the first entries or the most obvious options. A fresh, less common pairing makes a better concept than a familiar one."""]
 
         if creative_engines:
             sections.append(f"""CREATIVE ENGINES
