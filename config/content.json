@@ -12,40 +12,6 @@
         "fun",
         "chill"
     ],
-    "world": [
-        "cozy modern apartments with warm lighting and comfortable furniture",
-        "sunny parks with cherry blossoms, green trees, and walking paths",
-        "bright cafes with large windows, wooden tables, and warm atmosphere",
-        "colorful shopping streets with interesting shops and cozy storefronts",
-        "beautiful beaches with gentle waves, soft sand, and golden sunlight",
-        "train stations and travel scenes with a sense of adventure",
-        "home kitchens with warm lighting, countertops, and cooking activities",
-        "bedrooms with soft bedding, warm blankets, and intimate atmosphere",
-        "restaurants with cozy seating, warm lighting, and delicious food",
-        "rooftops and scenic overlooks with city views and sunset skies",
-        "libraries and study spaces with bookshelves and quiet atmosphere",
-        "arcades and game centers with colorful lights and fun activities",
-        "festivals and outdoor events with lanterns, crowds, and excitement",
-        "nature trails with trees, flowers, and peaceful walking paths",
-        "cozy living rooms with sofas, blankets, and warm atmosphere",
-        "aquariums with glowing tanks and colorful fish drifting past glass",
-        "botanical gardens with greenhouses, flower beds, and shaded benches",
-        "night markets with food stalls, string lights, and lively crowds",
-        "cozy bookstores with tall shelves, ladders, and warm reading corners",
-        "amusement parks with ferris wheels, carnival games, and glowing rides",
-        "snowy winter streets with warm shop lights and falling snow",
-        "autumn parks with red and gold leaves drifting to the ground",
-        "rainy streets with neon reflections, shared umbrellas, and puddles",
-        "balconies with potted plants, string lights, and evening city views",
-        "beach boardwalks with snack stands, seagulls, and ocean breeze",
-        "laundromats with warm dryers, folding tables, and quiet domestic comfort",
-        "convenience stores at night with bright shelves and late-night snack runs",
-        "bus stops in the evening with soft streetlights and quiet waiting",
-        "flower shops and street flower stalls with colorful fresh bouquets",
-        "hot springs with rising steam, stone edges, and mountain views",
-        "ice cream parlors with pastel decor and sunny window seats",
-        "bakeries with glass display cases, fresh bread, and morning light"
-    ],
     "protagonists": [
         "a handsome Asian young man and a cute Asian young woman with an hourglass body figure who are a couple, always together, interacting with each other or sharing an activity"
     ],
@@ -81,13 +47,6 @@
         "creative_directions": [],
         "creative_priorities": [],
         "diversity_guidance": [],
-        "wow_factor_guidance": [
-            "Open with a visible image that holds the eye within the first second - through light, shape, atmosphere, color, or a striking subject.",
-            "Make the final image distinctly more striking than the setup - a satisfying landing, never a louder or busier one.",
-            "Let the environment and its look carry the weight; an atmospherically rich or unusual setting with a strong subject already commands attention.",
-            "Beauty, scale, light, and satisfying motion count every bit as much as surprise - aim for an arresting, coherent image rather than a gimmick."
-        ],
-        "living_subject_rules": [],
         "style_rotation": [
             "storybook anime"
         ],
@@ -98,8 +57,7 @@
             "maximum_words_per_second": 20,
             "minimum_words_floor": 90,
             "maximum_words_cap": 170
-        },
-        "wow_factor": []
+        }
     },
     "creative_engines": [],
     "characters": {
@@ -136,52 +94,351 @@
             ]
         }
     },
-    "activities": [
-        "walking together through scenic locations",
-        "eating meals together at cafes or restaurants",
-        "cooking together in a kitchen",
-        "shopping at stores or markets",
-        "studying or reading together",
-        "playing games or arcade activities",
-        "traveling on trains or exploring new places",
-        "sightseeing at beautiful locations",
-        "relaxing at home on a couch or bed",
-        "watching movies together",
-        "going on dates to romantic locations",
-        "exploring interesting places together",
-        "doing household activities together",
-        "sharing food or drinks",
-        "having casual conversations",
-        "cute everyday interactions and gestures",
-        "enjoying sunset or sunrise together",
-        "visiting parks or gardens",
-        "enjoying seasonal activities",
-        "celebrating small moments together",
-        "sharing an umbrella while walking in the rain",
-        "feeding each other a bite of food",
-        "taking photos of each other with a phone or camera",
-        "carrying shopping bags together after a shopping trip",
-        "waiting together at a bus stop or train platform",
-        "sharing late-night snacks at a convenience store",
-        "dancing playfully in the living room",
-        "stargazing together from a balcony or hilltop",
-        "listening to music with shared earbuds",
-        "baking cookies or a cake together",
-        "folding laundry and doing chores together",
-        "giving each other piggyback rides",
-        "holding hands and comparing hand sizes",
-        "falling asleep on each others shoulder",
-        "petting a stray cat together on the street",
-        "warming each others cold hands",
-        "fixing or playing with each others hair",
-        "blowing on hot food to cool it before eating",
-        "choosing items together from a menu or shop shelf",
-        "riding bicycles together through quiet streets",
-        "watering plants and gardening together on a balcony",
-        "packing a suitcase together before a trip",
-        "cheering each other up with small gifts or gestures",
-        "trying on clothes together in a fitting room",
-        "splitting a single dessert with two spoons",
-        "playing in autumn leaves or snow together"
-    ]
+    "scene_selection": {
+        "scenes": [
+            {
+                "environment": "cozy modern apartments with warm lighting and comfortable furniture",
+                "activities": [
+                    "relaxing at home on a couch or bed",
+                    "watching movies together",
+                    "dancing playfully in the living room",
+                    "listening to music with shared earbuds",
+                    "holding hands and comparing hand sizes",
+                    "falling asleep on each others shoulder",
+                    "fixing or playing with each others hair"
+                ]
+            },
+            {
+                "environment": "sunny parks with cherry blossoms, green trees, and walking paths",
+                "activities": [
+                    "walking together through scenic locations",
+                    "sightseeing at beautiful locations",
+                    "visiting parks or gardens",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera",
+                    "giving each other piggyback rides",
+                    "petting a stray cat together on the street",
+                    "riding bicycles together through quiet streets",
+                    "cheering each other up with small gifts or gestures",
+                    "playing in autumn leaves or snow together"
+                ]
+            },
+            {
+                "environment": "bright cafes with large windows, wooden tables, and warm atmosphere",
+                "activities": [
+                    "eating meals together at cafes or restaurants",
+                    "sharing food or drinks",
+                    "having casual conversations",
+                    "feeding each other a bite of food",
+                    "listening to music with shared earbuds",
+                    "blowing on hot food to cool it before eating",
+                    "choosing items together from a menu or shop shelf",
+                    "splitting a single dessert with two spoons"
+                ]
+            },
+            {
+                "environment": "colorful shopping streets with interesting shops and cozy storefronts",
+                "activities": [
+                    "shopping at stores or markets",
+                    "taking photos of each other with a phone or camera",
+                    "carrying shopping bags together after a shopping trip",
+                    "choosing items together from a menu or shop shelf",
+                    "trying on clothes together in a fitting room"
+                ]
+            },
+            {
+                "environment": "beautiful beaches with gentle waves, soft sand, and golden sunlight",
+                "activities": [
+                    "walking together through scenic locations",
+                    "sightseeing at beautiful locations",
+                    "enjoying sunset or sunrise together",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera"
+                ]
+            },
+            {
+                "environment": "train stations and travel scenes with a sense of adventure",
+                "activities": [
+                    "traveling on trains or exploring new places",
+                    "waiting together at a bus stop or train platform",
+                    "listening to music with shared earbuds",
+                    "packing a suitcase together before a trip"
+                ]
+            },
+            {
+                "environment": "home kitchens with warm lighting, countertops, and cooking activities",
+                "activities": [
+                    "cooking together in a kitchen",
+                    "feeding each other a bite of food",
+                    "baking cookies or a cake together",
+                    "blowing on hot food to cool it before eating"
+                ]
+            },
+            {
+                "environment": "bedrooms with soft bedding, warm blankets, and intimate atmosphere",
+                "activities": [
+                    "relaxing at home on a couch or bed",
+                    "watching movies together",
+                    "listening to music with shared earbuds",
+                    "holding hands and comparing hand sizes",
+                    "falling asleep on each others shoulder",
+                    "fixing or playing with each others hair"
+                ]
+            },
+            {
+                "environment": "restaurants with cozy seating, warm lighting, and delicious food",
+                "activities": [
+                    "eating meals together at cafes or restaurants",
+                    "sharing food or drinks",
+                    "having casual conversations",
+                    "feeding each other a bite of food",
+                    "blowing on hot food to cool it before eating",
+                    "splitting a single dessert with two spoons"
+                ]
+            },
+            {
+                "environment": "rooftops and scenic overlooks with city views and sunset skies",
+                "activities": [
+                    "having casual conversations",
+                    "enjoying sunset or sunrise together",
+                    "taking photos of each other with a phone or camera",
+                    "stargazing together from a balcony or hilltop",
+                    "listening to music with shared earbuds"
+                ]
+            },
+            {
+                "environment": "libraries and study spaces with bookshelves and quiet atmosphere",
+                "activities": [
+                    "studying or reading together",
+                    "listening to music with shared earbuds",
+                    "falling asleep on each others shoulder"
+                ]
+            },
+            {
+                "environment": "arcades and game centers with colorful lights and fun activities",
+                "activities": [
+                    "playing games or arcade activities"
+                ]
+            },
+            {
+                "environment": "festivals and outdoor events with lanterns, crowds, and excitement",
+                "activities": [
+                    "sharing food or drinks",
+                    "celebrating small moments together",
+                    "taking photos of each other with a phone or camera",
+                    "dancing playfully in the living room",
+                    "cheering each other up with small gifts or gestures"
+                ]
+            },
+            {
+                "environment": "nature trails with trees, flowers, and peaceful walking paths",
+                "activities": [
+                    "walking together through scenic locations",
+                    "sightseeing at beautiful locations",
+                    "visiting parks or gardens",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera",
+                    "giving each other piggyback rides",
+                    "petting a stray cat together on the street",
+                    "choosing items together from a menu or shop shelf",
+                    "riding bicycles together through quiet streets",
+                    "watering plants and gardening together on a balcony"
+                ]
+            },
+            {
+                "environment": "cozy living rooms with sofas, blankets, and warm atmosphere",
+                "activities": [
+                    "relaxing at home on a couch or bed",
+                    "watching movies together",
+                    "cute everyday interactions and gestures",
+                    "dancing playfully in the living room",
+                    "listening to music with shared earbuds"
+                ]
+            },
+            {
+                "environment": "aquariums with glowing tanks and colorful fish drifting past glass",
+                "activities": [
+                    "sightseeing at beautiful locations",
+                    "taking photos of each other with a phone or camera",
+                    "holding hands and comparing hand sizes"
+                ]
+            },
+            {
+                "environment": "botanical gardens with greenhouses, flower beds, and shaded benches",
+                "activities": [
+                    "walking together through scenic locations",
+                    "sightseeing at beautiful locations",
+                    "visiting parks or gardens",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera",
+                    "choosing items together from a menu or shop shelf",
+                    "watering plants and gardening together on a balcony"
+                ]
+            },
+            {
+                "environment": "night markets with food stalls, string lights, and lively crowds",
+                "activities": [
+                    "eating meals together at cafes or restaurants",
+                    "shopping at stores or markets",
+                    "sharing food or drinks",
+                    "carrying shopping bags together after a shopping trip",
+                    "blowing on hot food to cool it before eating",
+                    "choosing items together from a menu or shop shelf"
+                ]
+            },
+            {
+                "environment": "cozy bookstores with tall shelves, ladders, and warm reading corners",
+                "activities": [
+                    "studying or reading together",
+                    "listening to music with shared earbuds",
+                    "choosing items together from a menu or shop shelf"
+                ]
+            },
+            {
+                "environment": "amusement parks with ferris wheels, carnival games, and glowing rides",
+                "activities": [
+                    "walking together through scenic locations",
+                    "playing games or arcade activities",
+                    "sightseeing at beautiful locations",
+                    "visiting parks or gardens",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera",
+                    "giving each other piggyback rides",
+                    "petting a stray cat together on the street",
+                    "riding bicycles together through quiet streets",
+                    "cheering each other up with small gifts or gestures",
+                    "playing in autumn leaves or snow together"
+                ]
+            },
+            {
+                "environment": "snowy winter streets with warm shop lights and falling snow",
+                "activities": [
+                    "walking together through scenic locations",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera",
+                    "petting a stray cat together on the street",
+                    "warming each others cold hands",
+                    "playing in autumn leaves or snow together"
+                ]
+            },
+            {
+                "environment": "autumn parks with red and gold leaves drifting to the ground",
+                "activities": [
+                    "walking together through scenic locations",
+                    "sightseeing at beautiful locations",
+                    "visiting parks or gardens",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera",
+                    "giving each other piggyback rides",
+                    "petting a stray cat together on the street",
+                    "riding bicycles together through quiet streets",
+                    "cheering each other up with small gifts or gestures",
+                    "playing in autumn leaves or snow together"
+                ]
+            },
+            {
+                "environment": "rainy streets with neon reflections, shared umbrellas, and puddles",
+                "activities": [
+                    "walking together through scenic locations",
+                    "sharing an umbrella while walking in the rain",
+                    "warming each others cold hands"
+                ]
+            },
+            {
+                "environment": "balconies with potted plants, string lights, and evening city views",
+                "activities": [
+                    "having casual conversations",
+                    "enjoying sunset or sunrise together",
+                    "stargazing together from a balcony or hilltop",
+                    "listening to music with shared earbuds",
+                    "watering plants and gardening together on a balcony"
+                ]
+            },
+            {
+                "environment": "beach boardwalks with snack stands, seagulls, and ocean breeze",
+                "activities": [
+                    "walking together through scenic locations",
+                    "eating meals together at cafes or restaurants",
+                    "sightseeing at beautiful locations",
+                    "sharing food or drinks",
+                    "enjoying sunset or sunrise together",
+                    "sharing an umbrella while walking in the rain",
+                    "taking photos of each other with a phone or camera",
+                    "blowing on hot food to cool it before eating"
+                ]
+            },
+            {
+                "environment": "laundromats with warm dryers, folding tables, and quiet domestic comfort",
+                "activities": [
+                    "folding laundry and doing chores together"
+                ]
+            },
+            {
+                "environment": "convenience stores at night with bright shelves and late-night snack runs",
+                "activities": [
+                    "sharing food or drinks",
+                    "sharing late-night snacks at a convenience store",
+                    "choosing items together from a menu or shop shelf"
+                ]
+            },
+            {
+                "environment": "bus stops in the evening with soft streetlights and quiet waiting",
+                "activities": [
+                    "having casual conversations",
+                    "waiting together at a bus stop or train platform",
+                    "listening to music with shared earbuds",
+                    "warming each others cold hands"
+                ]
+            },
+            {
+                "environment": "flower shops and street flower stalls with colorful fresh bouquets",
+                "activities": [
+                    "visiting parks or gardens",
+                    "taking photos of each other with a phone or camera",
+                    "choosing items together from a menu or shop shelf",
+                    "watering plants and gardening together on a balcony"
+                ]
+            },
+            {
+                "environment": "hot springs with rising steam, stone edges, and mountain views",
+                "activities": [
+                    "sharing food or drinks",
+                    "having casual conversations",
+                    "cute everyday interactions and gestures",
+                    "taking photos of each other with a phone or camera",
+                    "listening to music with shared earbuds",
+                    "holding hands and comparing hand sizes",
+                    "cheering each other up with small gifts or gestures"
+                ]
+            },
+            {
+                "environment": "ice cream parlors with pastel decor and sunny window seats",
+                "activities": [
+                    "eating meals together at cafes or restaurants",
+                    "sharing food or drinks",
+                    "blowing on hot food to cool it before eating",
+                    "splitting a single dessert with two spoons"
+                ]
+            },
+            {
+                "environment": "bakeries with glass display cases, fresh bread, and morning light",
+                "activities": [
+                    "eating meals together at cafes or restaurants",
+                    "sharing food or drinks",
+                    "baking cookies or a cake together",
+                    "blowing on hot food to cool it before eating",
+                    "choosing items together from a menu or shop shelf"
+                ]
+            }
+        ],
+        "general_activities": [
+            "sharing food or drinks",
+            "having casual conversations",
+            "cute everyday interactions and gestures",
+            "taking photos of each other with a phone or camera",
+            "listening to music with shared earbuds",
+            "holding hands and comparing hand sizes",
+            "cheering each other up with small gifts or gestures"
+        ]
+    }
 }

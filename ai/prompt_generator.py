@@ -38,7 +38,72 @@ class PromptGenerator(
             )
         )
 
+        self.scene_selection_config = (
+            content_config.get(
+                "scene_selection",
+                {}
+            )
+        )
+
         self.recent_concepts = []
+
+    def select_scene(self):
+
+        scenes = [
+            scene
+            for scene in self.scene_selection_config.get(
+                "scenes",
+                []
+            )
+            if isinstance(scene, dict)
+        ]
+
+        if not scenes:
+
+            return {
+                "environment": "",
+                "activity": ""
+            }
+
+        scene = random.choice(scenes)
+
+        environment = str(
+            scene.get(
+                "environment",
+                ""
+            )
+        ).strip()
+
+        activities = [
+            str(value).strip()
+            for value in scene.get(
+                "activities",
+                []
+            )
+            if str(value).strip()
+        ]
+
+        if not activities:
+
+            activities = [
+                str(value).strip()
+                for value in self.scene_selection_config.get(
+                    "general_activities",
+                    []
+                )
+                if str(value).strip()
+            ]
+
+        activity = (
+            random.choice(activities)
+            if activities
+            else ""
+        )
+
+        return {
+            "environment": environment,
+            "activity": activity
+        }
 
     def pick_episode_style(self):
 
@@ -87,11 +152,6 @@ class PromptGenerator(
             []
         )
 
-        world = self.channel_config.get(
-            "world",
-            []
-        )
-
         protagonists = self.channel_config.get(
             "protagonists",
             []
@@ -105,11 +165,6 @@ class PromptGenerator(
         characters = self.channel_config.get(
             "characters",
             {}
-        )
-
-        activities = self.channel_config.get(
-            "activities",
-            []
         )
 
         instructions = self.prompt_config.get(
@@ -153,6 +208,18 @@ class PromptGenerator(
                     character_lines.append(f"  Cute Asian young woman outfit options: {'; '.join(girl_options)}")
         characters_text = "\n".join(character_lines) if character_lines else self.format_bullets(protagonists)
 
+        scene = self.select_scene()
+
+        environment = scene["environment"]
+
+        activity = scene["activity"]
+
+        self.log(
+            "Assigned scene - "
+            f"environment: {environment} | "
+            f"activity: {activity}"
+        )
+
         # Build sections conditionally
         sections = [f"""GENRE
 {genre}
@@ -160,17 +227,21 @@ class PromptGenerator(
 MOOD AND TONE
 {self.format_bullets(tone)}
 
-ENVIRONMENT POOL (choose ONE from this list - every entry is equally valid, spread your choices across the whole list)
-{self.format_bullets(world)}
+ASSIGNED ENVIRONMENT (use exactly this environment for the scene)
+{environment}
 
 THE COUPLE
 {characters_text}
 
-ACTIVITY POOL (choose ONE from this list - every entry is equally valid, spread your choices across the whole list)
-{self.format_bullets(activities)}
+ASSIGNED ACTIVITY (the couple must perform exactly this activity in the scene)
+{activity}
 
-SELECTION RULE
-Pick exactly one environment and one activity from the pools above. Treat the pools as a full menu: do not gravitate to the first entries or the most obvious options. A fresh, less common pairing makes a better concept than a familiar one.
+SCENE ASSIGNMENT
+The environment and activity above were randomly assigned for this
+generation. Build the concept around exactly this pairing - do not swap
+either for another option. You have full creative freedom in how you
+stage, light, and choreograph the moment within the assigned environment
+and activity.
 
 OUTFIT RULE
 Use the default outfits only when they suit the season, weather, and setting of the chosen scene. If the scene is cold, hot, rainy, snowy, or otherwise demands different clothing, pick an outfit from that character's outfit options instead. Never mix one character's clothing onto the other. The handsome Asian young man always wears pants or shorts as bottom wear. The cute Asian young woman always has an hourglass body figure - always include it when describing her - and always wears a short miniskirt or short dress as bottom wear, and her outfit must suit the weather (e.g., a sweater with a miniskirt in winter, a sundress in summer)."""]
@@ -700,22 +771,6 @@ No commentary.
         )
 
         return prompts
-
-    def validate_prompt(
-        self,
-        prompt
-    ):
-
-        if not isinstance(
-            prompt,
-            str
-        ):
-
-            return False
-
-        return bool(
-            prompt.strip()
-        )
 
     def clean_response(
         self,

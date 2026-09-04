@@ -1150,9 +1150,11 @@ varied. It is a plain list in `config/content.json` (`style_rotation`)
   open with the selected style.
 
 No style repeats until the whole list has been used, and never back-to-back
-across cycle boundaries. Settings are chosen freely by the model from the
-environment guidance (the `world` list and the visual-first instructions),
-with soft anti-repetition via the variety rules and recent-concept memory.
+across cycle boundaries. The scene is chosen randomly per generation from
+`scene_selection.scenes` in `config/content.json` — each scene pairs an
+environment with activities that naturally fit it — and the model builds the
+concept around the assigned pairing, with soft anti-repetition via the
+variety rules and recent-concept memory.
 
 ## Guidance (not filtering)
 
