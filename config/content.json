@@ -105,7 +105,7 @@
     "characters": {
         "boy": {
             "description": "A handsome Asian young man. Always describe his hair, top wear, and bottom wear. Never use his name in generation prompts.",
-            "default_outfit": "handsome Asian young man, short black hair, dark blue sweater, black pants",
+            "default_outfit": "handsome Asian young man, short black hair, dark blue shirt, black pants",
             "clothing_options": [
                 "casual hoodie and jeans",
                 "stylish sweater and dark pants",
