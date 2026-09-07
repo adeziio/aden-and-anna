@@ -3202,27 +3202,6 @@ def main():
         RequestHandler
     )
 
-    print()
-    print(
-        "======================================"
-    )
-    print(
-        "        ADEN & ANNA WEB UI"
-    )
-    print(
-        "======================================"
-    )
-    print(
-        f"Running on http://{HOST}:{PORT}"
-    )
-    print(
-        "Open http://localhost:8000"
-    )
-    print(
-        "======================================"
-    )
-    print()
-
     try:
 
         server.serve_forever()
