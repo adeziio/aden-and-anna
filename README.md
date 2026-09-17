@@ -229,9 +229,9 @@ aden-and-anna/
 
 ├── .gitignore
 
-├── install_linux.sh
+├── setup_linux.sh
 
-├── install_windows.bat
+├── setup.bat
 
 ├── main.py
 
@@ -239,9 +239,9 @@ aden-and-anna/
 
 ├── requirements.txt
 
-├── run_linux.sh
+├── runner_linux.sh
 
-├── run_windows.bat
+├── runner.bat
 
 └── .venv/ (created locally after install)
 ```
@@ -271,7 +271,7 @@ If the repository is private, authenticate with GitHub when prompted.
 Run the Windows installer:
 
 ```powershell
-.\install_windows.bat
+.\setup.bat
 ```
 
 The installer:
@@ -307,13 +307,13 @@ Run the browser-based UI locally (quick start):
 * On Windows (recommended for local development):
 
 ```powershell
-.\run_windows.bat
+.\runner.bat
 ```
 
 * On Linux / RunPod (example):
 
 ```bash
-bash run_linux.sh
+bash runner_linux.sh
 ```
 
 Both of those scripts start the same web UI and backend pipeline. Alternatively you can start the HTTP server directly:
@@ -355,7 +355,7 @@ Edit code
 
    ↓
 
-.\run_windows.bat
+.\runner.bat
 
    ↓
 
@@ -367,7 +367,7 @@ Make changes
 
    ↓
 
-.\run_windows.bat
+.\runner.bat
 ```
 
 Generated shorts are stored under:
@@ -442,7 +442,7 @@ For a private repository, authenticate with GitHub and clone the repository.
 Run the Linux installer:
 
 ```bash
-bash install_linux.sh
+bash setup_linux.sh
 ```
 
 The installer:
@@ -462,7 +462,7 @@ The installer:
 ## 3. Run Aden & Anna
 
 ```bash
-bash run_linux.sh
+bash runner_linux.sh
 ```
 
 The Linux runner:
@@ -560,7 +560,7 @@ python web/server.py
 or use the normal RunPod/Linux runner:
 
 ```bash
-bash run_linux.sh
+bash runner_linux.sh
 ```
 
 The server must listen on port `8000` so that RunPod can forward browser requests to the application.
@@ -1260,7 +1260,7 @@ The form keeps only what is required:
 
 Instagram's servers fetch the video themselves, so publishing requires a **publicly reachable HTTPS URL** for the episode MP4. The application derives it automatically from however you are browsing the UI:
 
-* Locally: run `run_windows.bat` with cloudflared installed — the script auto-starts a quick tunnel and prints the public URL. Browse the app through that URL.
+* Locally: run `runner.bat` with cloudflared installed — the script auto-starts a quick tunnel and prints the public URL. Browse the app through that URL.
 * On RunPod: expose port 8000 as an HTTP port and browse through the provided `https://<pod-id>-8000.proxy.runpod.net` URL.
 
 If the derived host is `localhost`, the server logs a warning and publish failures include the exact unreachable URL for diagnosis.
